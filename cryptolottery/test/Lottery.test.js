@@ -43,7 +43,29 @@ describe('Lottery cotract', () => {
 
     assert.equal(accounts[0], players[0]);
     assert.equal(accounts[1], players[1]);
-    assert.equal(accounts[2], players[2);
+    assert.equal(accounts[2], players[2]);
     assert.equal(3, players.length);
+  });
+
+  it('requires a minimum amount of ether to enter', async () => {
+    try {
+      await lottery.methods.enter().send({
+        value: 200,
+      });
+      assert(false);
+    } catch (err) {
+      assert(err);
+    }
+  });
+
+  it('only manager can call pick winner', async () => {
+    try {
+      await lottery.methods.pickWinner().send({
+        from: accounts[1],
+      });
+      assert(false);
+    } catch (err) {
+      assert(err);
+    }
   });
 });
