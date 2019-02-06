@@ -38,18 +38,17 @@ class App extends Component {
     this.setState({ message: 'You have been entered' });
   };
 
-  onClick = async => {
+  onClick = async () => {
     const accounts = await web3.eth.getAccounts();
 
-    this.setState({message: 'Waiting on transaction success'});
+    this.setState({ message: 'Waiting on transaction success' });
 
     await lottery.methods.pickWinner().send({
-      from: accounts[0]
+      from: accounts[0],
     });
 
-    this.setState({message: 'A winner has been picked!'});
-
-  }
+    this.setState({ message: 'A winner has been picked!' });
+  };
 
   render() {
     return (
