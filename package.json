@@ -2,7 +2,7 @@
   "name": "kickstarter-crypto",
   "version": "1.0.0",
   "description": "Kickstarter campaign using Blockchain",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
