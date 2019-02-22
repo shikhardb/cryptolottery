@@ -18,14 +18,26 @@ It's here now.
  ### View Latest Campaigns 🕶
  ![N|Solid](https://raw.githubusercontent.com/shikhardb/cryptolottery/master/images/open-campaigns.JPG)
  
+ ---
+ 
+ 
  ### View Campaign Details 📃
  ![N|Solid](https://raw.githubusercontent.com/shikhardb/cryptolottery/master/images/view-campaign.JPG)
+ 
+ ---
+ 
  
  ### View Contribution Requests under a Campaign 🤑
  ![N|Solid](https://raw.githubusercontent.com/shikhardb/cryptolottery/master/images/view-requests.JPG)
  
+ ---
+ 
+ 
  ### Create a new Contribution Request 👩‍✈️👨‍✈️
  ![N|Solid](https://raw.githubusercontent.com/shikhardb/cryptolottery/master/images/create-request.JPG)
+ 
+ ---
+ 
  
  ## To run this on your localhost
  
